@@ -1,0 +1,69 @@
+body {
+    font-family: Montserrat;
+}
+
+
+/*Estilos del Nav*/
+.sinAdorno {
+    text-decoration: none;
+}
+
+.titulo {
+    font-family: Bebas Neue;
+    display: block;
+    background-color: #1B5169;
+    color: #C4D9ED;
+    text-align: center;
+    padding: 2%;
+    text-shadow: #2C83A8;
+}
+
+b {
+    font-size: 2.6rem;
+}
+
+.sinAdorno:hover {
+    text-underline-position: below;
+    text-decoration: underline;
+    text-decoration-color: #2C83A8;
+}
+
+/*Estilos de la información*/
+
+.contenedor {
+    padding-right: 15vw;
+    padding-left: 15vw;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+}
+
+.texto {
+    text-align: center;
+}
+
+/*Estilos de la interacción*/
+.formulario {
+    margin-right: 5vw;
+    margin-left: 5vw;
+}
+
+.btn-light {
+    margin-bottom: 4vh;
+    background-color: #2C83A8;
+    color: white;
+}
+
+.botonFinal {
+    display: block;
+    margin-left: 70vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    background-color: #1B5169;
+}
+
+/*Estilos de los resultados*/
+.table {
+    margin-right: 5vw;
+    margin-left: 5vw;
+    width: 90vw;
+}

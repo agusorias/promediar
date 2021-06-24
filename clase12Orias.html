@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>PromediAR</title>
+</head>
+<body>
+
+    <nav>
+        <a href="clase12Orias.html" class="sinAdorno"><h1 class="titulo">Promedi<b>ar</b></h1></a>
+    </nav>
+
+    <section id="informacion">
+        <div class="contenedor">
+            <h2 class="texto">¡Promedia tus notas en simples pasos!</h2>
+        </div>
+    </section>
+
+    <section id="interaccion">
+        <form class="formulario">
+
+            <div class="form-group">
+              <label for="exampleFormControlInput1">¿Cuántas notas desea promediar?</label>
+              <input type="number" class="form-control" id="cantidadNotas" placeholder="2" min="2" max="5">
+            </div>
+          
+            <button type="button" class="btn btn-light" id="aceptarCantNotas" onclick="guardarCantNotas()">Guardar</button>
+
+            <div class="form-group">
+                <label for="exampleFormControlInput1">¿Cuántos alumnos desea promediar?</label>
+                <input type="number" class="form-control" id="cantidadAlumnos" placeholder="1" min="1" max="45">
+            </div>
+              
+            <button type="button" class="btn btn-light" id="aceptarCantAlumnos" onclick="guardarCantAlumnos()">Guardar</button>
+
+        </form>
+    </section>
+
+    <section id="resultados">
+        <table class="table">
+            <thead class="thead-light">
+              <tr id="primeraCol">
+                <th scope="col">#</th>
+              </tr>
+            </thead>
+            <tbody id="bodyDeTabla">
+            </tbody>
+          </table>
+    </section>
+
+    <button type="button" class="btn btn-light botonFinal" id="promediando">Generar promedios</button>
+
+    <script src="js/clase12Orias.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
