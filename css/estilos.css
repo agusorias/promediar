@@ -82,6 +82,13 @@ b {
     background-color: #1B5169;
 }
 
+.botonBorrar {
+    display: block;
+    margin-left: 70vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
 .botonGuardar {
     display: block;
     margin-left: 70vw;
