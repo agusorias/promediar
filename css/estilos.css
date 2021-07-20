@@ -29,6 +29,13 @@ b {
     padding-right: 3%;
 }
 
+.parrafo2 {
+    font-size: 1.3rem;
+    font-family: Montserrat;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
 .sinAdorno:hover {
     text-underline-position: below;
     text-decoration: underline;
@@ -92,4 +99,12 @@ b {
 
 .thead-dark{
     background-color: #1B5169;
+}
+
+.desaprobado {
+    color: #ce4820;
+}
+
+.aprobado {
+    color: #2ca847;
 }

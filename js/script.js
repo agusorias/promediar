@@ -42,7 +42,7 @@ function guardarCantAlumnos (){
     let seccion = document.getElementById("interaccion");
     let parrafoExplicativo = document.createElement("p");
     parrafoExplicativo.setAttribute("class", "parrafo");
-    parrafoExplicativo.innerHTML = "Ahora debes completar con un nombre o número de referencia de los alumnos.";
+    parrafoExplicativo.innerHTML = "1. Ahora debes completar con un nombre o número de referencia de cada uno de los alumnos.";
     seccion.appendChild(parrafoExplicativo);
 
     //Se crean inputs para nombres o referencias de cada alumno
@@ -53,6 +53,11 @@ function guardarCantAlumnos (){
         nuevoInputNombre.innerHTML = `"Referencia del alumno" <input type="text" class="form-control" placeholder="Texto/Número" onchange="guardarNombre(this)">`;
         seccion.appendChild(nuevoInputNombre);
     }
+
+    let parrafoExplicativo2 = document.createElement("p");
+    parrafoExplicativo2.setAttribute("class", "parrafo2");
+    parrafoExplicativo2.innerHTML = "2. Completa las notas de cada alumno de izquierda a derecha. Primero las notas del primer alumno, luego las del segundo; y así sucesivamente."
+    seccion.appendChild(parrafoExplicativo2);
 }
 
 class Estudiante {
@@ -76,7 +81,6 @@ function guardarNombre(entradaNombre){
 
             let nuevaCelda = document.createElement("td");
             nuevaCelda.setAttribute("class", "celda");
-            //nuevaCelda.setAttribute("onchange", "guardarValor(this)");
             nuevaCelda.innerHTML = `<input type="number" class="form-control" placeholder="1" min="1" max="10" onchange="guardarValor(this)">`;
             nuevaFila.appendChild(nuevaCelda);
         };
@@ -143,9 +147,12 @@ function promediar (){
         listaDeAlumnos[i].promedio = promedio;
         tableBody.appendChild(nombreConResultado);
         
+        if ((promedio >= 6 && promedio <= 10) || (promedio >= 60 && promedio <= 100)){
+            nombreConResultado.setAttribute("class", "aprobado");
+        } else {
+            nombreConResultado.setAttribute("class", "desaprobado");
+        }
+
         console.log(resultado/cantNotas);
     }
-
-
-
 }
