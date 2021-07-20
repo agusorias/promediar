@@ -22,6 +22,13 @@ b {
     font-size: 2.6rem;
 }
 
+.parrafo {
+    font-size: 1.6rem;
+    font-family: Montserrat;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
 .sinAdorno:hover {
     text-underline-position: below;
     text-decoration: underline;
@@ -35,6 +42,13 @@ b {
     padding-left: 15vw;
     padding-top: 15vh;
     padding-bottom: 15vh;
+}
+
+.contenedorInputNombre {
+    padding-right: 7vw;
+    padding-left: 7vw;
+    padding-top: 2vh;
+    padding-bottom: 5vh;
 }
 
 .texto {
@@ -61,9 +75,21 @@ b {
     background-color: #1B5169;
 }
 
+.botonGuardar {
+    display: block;
+    margin-left: 70vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    background-color: #428cac;
+}
+
 /*Estilos de los resultados*/
 .table {
     margin-right: 5vw;
     margin-left: 5vw;
     width: 90vw;
+}
+
+.thead-dark{
+    background-color: #1B5169;
 }
